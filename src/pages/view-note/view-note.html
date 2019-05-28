@@ -1,0 +1,25 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>view-note</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+    <ion-card-header>
+      {{note.title}}
+    </ion-card-header>
+    <ion-card-content>
+      {{note.content}}
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
+
+<ion-footer>
+
+  <button ion-button color="danger" block (click)="deleteNote(note.createDate)">Delte Note</button>
+</ion-footer>
